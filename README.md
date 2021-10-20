@@ -24,9 +24,8 @@ ex) main_Cralwer("홍길동", "901101", "1234567", "형법 제250조")
 <br>
 6. receipt.py
 결제한 판결문의 영수증을 다운로드 한다.
-![image](https://user-images.githubusercontent.com/73030613/138045445-939315e5-6c28-4d70-9ede-a0ddfa32b426.png)
+![image](https://user-images.githubusercontent.com/73030613/138045616-477cae54-b18f-4010-9181-82dc60d53804.png)
 
-<br>
 7. download.py
 결제한 판결문, 기록목록, 증거목록을 다운로드 한다.
  
