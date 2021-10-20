@@ -15,11 +15,11 @@ import csv
 import openpyxl
 import re
 from openpyxl import load_workbook
-from main2Crawler import *
+from mainCrawler import *
 import pocket_1
-from del_excel_4 import *
-from receipt_5 import *
-from download_6 import *
+from del_excel import *
+from receipt import *
+from download import *
 
 #    form_class에 ui 파일을 로드한다.
 form_class = uic.loadUiType("main2.ui")[0]
