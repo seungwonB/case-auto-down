@@ -21,11 +21,11 @@ ex) main_Cralwer("홍길동", "901101", "1234567", "형법 제250조")
 ![image](https://user-images.githubusercontent.com/73030613/138045383-5b26140a-2626-42ae-a970-1f005ff67986.png)
 
 5. 수작업 결제
-
+<br>
 6. receipt.py
 결제한 판결문의 영수증을 다운로드 한다.
 ![image](https://user-images.githubusercontent.com/73030613/138045445-939315e5-6c28-4d70-9ede-a0ddfa32b426.png)
-
+<
 7. download.py
 결제한 판결문, 기록목록, 증거목록을 다운로드 한다.
  
