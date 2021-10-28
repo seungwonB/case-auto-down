@@ -239,6 +239,8 @@ def real_func(name, jumin1, jumin2, tel1, tel2):
             time.sleep(0.1)
             driver.find_element_by_id("saGbnnm").send_keys(Keys.BACK_SPACE)
             time.sleep(0.1)
+            driver.find_element_by_id("saGbnnm").send_keys(Keys.BACK_SPACE)
+            time.sleep(0.1)
             driver.find_element_by_id("csqSaNum").clear()
 
             time.sleep(0.5)
