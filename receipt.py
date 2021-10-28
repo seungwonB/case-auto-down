@@ -69,34 +69,34 @@ def func_receipt(name, jumin1, jumin2, phone1, phone2):
     driver.find_element_by_id("search_btn").click()
 
     # 결제 갯수 파악하기
-    count = driver.find_element_by_class_name("colorNotice").text
-    count = count.replace("총","")
-    count = count.replace("건","")
-    count = int(count)
+#     count = driver.find_element_by_class_name("colorNotice").text
+#     count = count.replace("총","")
+#     count = count.replace("건","")
+#     count = int(count)
 
     x = 712
     y = 753
-    if count <= 10:
-        for i in range(1, count+1):
-            i = i * 2 - 1
-            path_name = f'//*[@id="contants"]/div[2]/div[2]/table/tbody/tr[{str(i)}]/td[6]/a[1]/img'
-            # 확인서 클릭
-            driver.find_element_by_xpath(path_name).click()
-            time.sleep(1)
-            driver.switch_to.window(driver.window_handles[-1])
-            # 출력 클릭
-            driver.find_element_by_id("printBtn").click()
-            # 인쇄 버튼이 로딩으로 인하여 먹히지 않아 직접적으로 마우스를 움직여 클릭함.
-            # x, y 좌표는 pyautogui.position()으로 추출
-            pyautogui.moveTo(x, y)
-            time.sleep(1)
-            # 버튼 클릭
-            pyautogui.click()
-            time.sleep(1)
-            # 파일 이름
-            pyperclip.copy("결제"+str(i))
-            pyautogui.hotkey('ctrl','v')
-            # 저장
-            pyautogui.hotkey('alt','s')
-            # 현재 창 닫기
-            driver.close()
+
+    for i in range(1, 6):
+        i = i * 2 - 1
+        path_name = f'//*[@id="contants"]/div[2]/div[2]/table/tbody/tr[{str(i)}]/td[6]/a[2]/img'
+        # 확인서 클릭
+        driver.find_element_by_xpath(path_name).click()
+        time.sleep(1)
+        driver.switch_to.window(driver.window_handles[-1])
+        # 출력 클릭
+        driver.find_element_by_id("printBtn").click()
+        # 인쇄 버튼이 로딩으로 인하여 먹히지 않아 직접적으로 마우스를 움직여 클릭함.
+        # x, y 좌표는 pyautogui.position()으로 추출
+        pyautogui.moveTo(x, y)
+        time.sleep(1)
+        # 버튼 클릭
+        pyautogui.click()
+        time.sleep(1)
+        # 파일 이름
+        pyperclip.copy("결제"+str(i))
+        pyautogui.hotkey('ctrl','v')
+        # 저장
+        pyautogui.hotkey('alt','s')
+        # 현재 창 닫기
+        driver.close()
