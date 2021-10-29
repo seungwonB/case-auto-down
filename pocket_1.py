@@ -225,6 +225,8 @@ def real_func(name, jumin1, jumin2, tel1, tel2):
         print("temp:",temp)
         print("row:",row)
         print("max_len:",max_len)
+        if cnt == 0:
+            legnth = 101
         for i in range(row, length):
             driver.switch_to.window(driver.window_handles[0])
             driver.switch_to.frame('wcdFrame')
@@ -291,14 +293,18 @@ def real_func(name, jumin1, jumin2, tel1, tel2):
             driver.find_element_by_id("noBtn").click()
 
         print("장바구니 담기 완료")
+        cnt += 1
 
         if temp < max_len:
-            length = k - 1
+            length = k- 1
             row += 100
         else:
-            length = max_len
+            length += 100
             temp -= 100
-            row += 100
+            if cnt == 1:
+                row += 99 # 101
+            else:
+                row += 100
 
         print("남은 갯수 : ", temp)
         print("길이 : ", length)
