@@ -1,6 +1,8 @@
 # 판결문 자동 검색, 다운로드 by python
+<b>순서도</b>
+![image](https://user-images.githubusercontent.com/73030613/141794039-fee96ca5-9b0c-4055-8860-89e72ea70f54.png)
 
-순서
+<b>순서 설명<b> <br>
 
 1. mainCrawler.py
 판결문 사이트에서 원하는 법령의 판결문들을 엑셀에 저장하는 것이다.
