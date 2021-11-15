@@ -1,6 +1,6 @@
 # 판결문 자동 검색, 다운로드 by python
 <b>순서도</b>
-![image](https://user-images.githubusercontent.com/73030613/141794039-fee96ca5-9b0c-4055-8860-89e72ea70f54.png)
+![image](https://user-images.githubusercontent.com/73030613/141794919-4c097227-5133-4f24-a7b7-b87a58cd7c71.png)
 
 <b>순서 설명<b> <br>
 
